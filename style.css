@@ -1,8 +1,122 @@
-* {
+@import "variables.css";
+
+*{
     margin: 0;
     padding: 0;
 }
-body{
-    max-width: 297cm;
-    background-image: ;
+
+
+
+header{
+    background-color: var(--ljusbrand);
+}
+
+header div{
+    display: flex;
+    max-width:1200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+header div section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+header div section:first-of-type{
+    flex: 1;
+}
+
+header div section:first-of-type img{
+    width: 75%;
+    height: 75%;
+}
+
+header div section:last-of-type {
+    flex: 2;
+    flex-direction: column;
+}
+
+main{
+    background-color: var(--ljusgra);
+}
+
+.item1 { grid-area: item1; 
+    background-color: var(--ljusturkos);}
+.item2 { grid-area: item2; 
+    background-color: var(--turkos);
+    color: white;}
+.item3 { grid-area: item3; 
+    background-color: var(--lila);
+    color: white;}
+.item4 { grid-area: item4; 
+    background-color: var(--ljuslila);}
+.item5 { grid-area: item5; 
+    background-color: var(--ljusbrand);}
+.item6 { grid-area: item6; 
+    background-color: var(--rosa);
+    color: white;}
+.item7 { grid-area: item7; 
+    background-color: var(--ljusrosa);}
+.item8 { grid-area: item8; 
+    background-color: var(--gra);}
+.item9 { grid-area: item9; 
+    background-color: var(--brandgul);}
+
+.grid-container {
+  display: grid;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 0;
+  grid-template-areas:
+    'item1 item1 item2 item2'
+    'item3 item4 item4 item4'
+    'item5 item5 item5 item6'
+    'item5 item5 item5 item7'
+    'item5 item5 item5 item8'
+    'item9 item9 item9 item9';
+  grid-gap: 10px;
+}
+
+.grid-container > div section{
+    margin: 20px 20px;
+  }
+
+  li{
+      list-style-position: inside;
+  }
+
+footer{
+    background-color: var(--ljusturkos);
+    }
+
+footer div{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    }
+
+footer div section{
+    display: flex;
+    flex: 1;
+    margin: 10px 20px;
+}
+
+footer div section:nth-of-type(1){
+    flex-direction: column;
+
+}
+
+footer div section:nth-of-type(2){
+    justify-content: center;
+}
+
+footer div section:nth-of-type(3){
+    flex-direction: column;
+    text-align:end;
 }
