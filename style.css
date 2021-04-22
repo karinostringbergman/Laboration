@@ -3,86 +3,88 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-
 
 header{
-    background-color: var(--ljusbrand);
-}
-
-header div{
     display: flex;
-    max-width:1200px;
-    margin: auto;
+    padding: 0.5rem 0;
+    padding-left: calc(50vw - 25rem);
+    padding-right: calc(50vw - 25rem);
+    background-color: var(--xljusbrand);
     justify-content: center;
     align-items: center;
 }
 
-header div section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 20px;
+header > div{
+    margin: 0 1rem;
 }
 
-header div section:first-of-type{
+header > div:first-of-type{
     flex: 1;
 }
 
-header div section:first-of-type img{
+header > div:first-of-type img{
     width: 75%;
     height: 75%;
 }
 
-header div section:last-of-type {
+header > div:last-of-type {
     flex: 2;
-    flex-direction: column;
-}
-
-main{
-    background-color: var(--ljusgra);
+    text-align: end;
 }
 
 .item1 { grid-area: item1; 
-    background-color: var(--ljusturkos);}
+    background-color: var(--xljusturkos);}
 .item2 { grid-area: item2; 
-    background-color: var(--turkos);
-    color: white;}
+    background-color: var(--morkturkos);
+    color: white;
+    font-weight: bold;}
+.item2a { grid-area: item2a; 
+    background-color: var(--ljusturkos);}
 .item3 { grid-area: item3; 
-    background-color: var(--lila);
-    color: white;}
+    background-color: var(--morkbrand);
+    color: white;
+    font-weight: bold;
+    max-width: 15rem;}
 .item4 { grid-area: item4; 
-    background-color: var(--ljuslila);}
+    background-color: var(--xljusbrand);}
 .item5 { grid-area: item5; 
-    background-color: var(--ljusbrand);}
+    background-color: var(--ljusgra);}
 .item6 { grid-area: item6; 
-    background-color: var(--rosa);
-    color: white;}
+    background-color: var(--morkturkos);
+    color: white;
+    font-weight: bold;}
 .item7 { grid-area: item7; 
-    background-color: var(--ljusrosa);}
+    background-color: var(--ljusturkos);}
 .item8 { grid-area: item8; 
-    background-color: var(--gra);}
+    background-color: var(--xljusturkos);}
 .item9 { grid-area: item9; 
-    background-color: var(--brandgul);}
+    background-color: var(--gra);}
 
-.grid-container {
+main{
   display: grid;
-  max-width: 1200px;
-  margin: auto;
-  padding: 10px 0;
+  background-color: var(--xljusgra);
+  padding: 0.5rem 0;
+  padding-left: calc(50vw - 25rem);
+  padding-right: calc(50vw - 25rem);
   grid-template-areas:
     'item1 item1 item2 item2'
+    'item1 item1 item2a item2a'
     'item3 item4 item4 item4'
     'item5 item5 item5 item6'
     'item5 item5 item5 item7'
     'item5 item5 item5 item8'
     'item9 item9 item9 item9';
-  grid-gap: 10px;
+  grid-gap: 0.5rem;
 }
 
-.grid-container > div section{
-    margin: 20px 20px;
+main > div {
+    padding: 1rem;
+  }
+
+main > div p{
+    padding: 0.5rem 0;
   }
 
   li{
@@ -90,33 +92,39 @@ main{
   }
 
 footer{
-    background-color: var(--ljusturkos);
-    }
-
-footer div{
     display: flex;
-    max-width: 1200px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--morkturkos);
+    padding: 0.5rem 0;
+    padding-left: calc(50vw - 25rem);
+    padding-right: calc(50vw - 25rem);
+    color: white;
     }
 
-footer div section{
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: black;
+}
+
+footer > div{
     display: flex;
     flex: 1;
-    margin: 10px 20px;
+    margin: 0.5rem 1rem;
 }
 
-footer div section:nth-of-type(1){
+footer > div:nth-of-type(1){
     flex-direction: column;
-
 }
 
-footer div section:nth-of-type(2){
+footer > div:nth-of-type(2){
     justify-content: center;
+    align-items: center;
 }
 
-footer div section:nth-of-type(3){
+footer > div:nth-of-type(3){
     flex-direction: column;
     text-align:end;
 }

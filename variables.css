@@ -1,13 +1,19 @@
 :root {
-    --brandgul: #FF7D00;
-    --ljusbrand: #FFDFBF;
-    --turkos: #076978;
-    --ljusturkos: rgb(0, 178, 169);
-    --svart: #000000;
-    --morkgra: #c0c7cd;
-    --gra: rgb(232, 233, 227);
-    --ljusgra: #f3f4f9;
-    --vit: #FFFFFF;
+    --morkbrand: rgb(255, 125, 000);
+    --brandgul: rgb(255, 151, 51);
+    --ljusbrand: rgb(255, 177, 102);
+    --xljusbrand: rgb(255, 203, 153);
+    --morkturkos: rgb(0, 153, 145);
+    --turkos: rgb(000, 178, 169);
+    --ljusturkos: rgb(000, 204, 194);
+    --xljusturkos: rgb(0, 230, 218);
+    --svart: rgb(0,0,0);
+    --morkgra: rgb(167, 173, 179);
+    --gra: rgb(191, 198, 204);
+    --ljusgra: rgb(215, 223, 230);
+    --xljusgra: rgb(239, 248, 255);
+    --vit: rgb(255, 255, 255);
+
     --lila: rgb(132, 50,155);
     --ljuslila: #B97DC9;
     --rosa: rgb(200, 70, 130);
